@@ -31,7 +31,7 @@ BADHATS uses a number of open source projects to work properly:
 - [SPRING] - awesome DI and WEB FRAMEWORK FOR J8 and above.
 - [H2] - Native JAVA SQL DB, writing to a local file in the jar, not mem, so if needed, persistance would be maitained.
 - [HAL] - Hypertext Application Language, standard.
-- [JGit] - Wonderful JAVA lib for useing the github API.
+- [JGit] - Wonderful JAVA lib for using the github API.
 
 
 

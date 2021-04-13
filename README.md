@@ -63,5 +63,5 @@ Both call will return a JSON with a list of sources. IPS have A LOT of list over
 - [findByID] - http://localhost:8080/badips/search/findByID?ip=XXXXXXXX
 
 # SOURCES!!!!
-This call will return a JSON with a list source. Sources sometimes maintian multiple lists, based on caterygory (malware, uncontrolled...etc).
+This call will return a JSON with a list source DO, links and details. Sources sometimes maintian multiple lists, based on threat category (malware, uncontrolled...etc).
 - [findByListName] - http://localhost:8080/sources/search/findByListName?listname=XXXXXXXX

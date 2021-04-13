@@ -18,7 +18,7 @@ This is a MAVEN Java/Spring H2 REST imploying HAL
 - Designed and tested on Elastic Beanstalk
 - Internal h2 DB makes for fast query, and queries can continue durring ingest.
 - Because of Spring Datasource, DB can be decoupled and pointed to any JPA compliant connector.
-- Drops tables ons startup, if needed,  and snatches GitHub Repo for Firehol list once each startup, and that could be tweaked via Commnand line runner or chron.
+- Drops tables on startup, if needed,  and snatches GitHub Repo for Firehol list once each startup, and that could be tweaked via Commnand line runner or chron.
 - Can ignore injest and be pointed to external h2 instance, and limit downtime.
 
 Just a few days effort because of Spring. Love Spring.

@@ -1,5 +1,5 @@
 # BADHATS
-## _THE REST API TO FIND A BAD IP, AND THE SOURCE IT CAME FROM_
+## _THE REST API TO FIND A BAD IP, AND THE SOURCE LIST IT CAME FROM_
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 

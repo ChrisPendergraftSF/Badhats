@@ -1,5 +1,5 @@
 # BADHATS
-## _THE REST API TO FIND A BAD IP, AND THE SOURCE IT CAME FROM_
+## _THE REST API TO FIND A BAD IP, AND THE SOURCE LIST IT CAME FROM_
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
@@ -18,7 +18,7 @@ This is a MAVEN Java/Spring H2 REST imploying HAL
 - Designed and tested on Elastic Beanstalk
 - Internal h2 DB makes for fast query, and queries can continue durring ingest.
 - Because of Spring Datasource, DB can be decoupled and pointed to any JPA compliant connector.
-- Drops tables and snaptches GitHub Repo for Firehol on each startup, and that can be run via Commnand line runner or chron.
+- Drops tables on startup, if needed,  and snatches GitHub Repo for Firehol list once each startup, and that could be tweaked via Commnand line runner or chron.
 - Can ignore injest and be pointed to external h2 instance, and limit downtime.
 
 Just a few days effort because of Spring. Love Spring.
@@ -31,7 +31,7 @@ BADHATS uses a number of open source projects to work properly:
 - [SPRING] - awesome DI and WEB FRAMEWORK FOR J8 and above.
 - [H2] - Native JAVA SQL DB, writing to a local file in the jar, not mem, so if needed, persistance would be maitained.
 - [HAL] - Hypertext Application Language, standard.
-- [JGit] - Wonderful JAVA lib for useing the github API.
+- [JGit] - Wonderful JAVA lib for using the github API.
 
 
 
@@ -63,5 +63,5 @@ Both call will return a JSON with a list of sources. IPS have A LOT of list over
 - [findByID] - http://localhost:8080/badips/search/findByID?ip=XXXXXXXX
 
 # SOURCES!!!!
-This call will return a JSON with a list source. Sources sometimes maintian multiple lists, based on caterygory (malware, uncontrolled...etc).
+This call will return a JSON with a list source DO, links and details. Sources sometimes maintian multiple lists, based on threat category (malware, uncontrolled...etc).
 - [findByListName] - http://localhost:8080/sources/search/findByListName?listname=XXXXXXXX

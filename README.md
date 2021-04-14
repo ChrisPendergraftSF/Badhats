@@ -5,7 +5,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-This is a MAVEN Java/Spring H2 REST imploying HAL
+This is a Gradle Java/Spring H2 REST imploying HAL
 
 - Searchable Interface
 - Supports over 6 million Changing Addresses daily

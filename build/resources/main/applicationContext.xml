@@ -1,2 +1,0 @@
-<bean id="applicationContextProvder"
-      class="com.java2novice.spring.ApplicationContextProvider"/>

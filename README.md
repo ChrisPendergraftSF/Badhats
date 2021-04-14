@@ -5,11 +5,11 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-This is a MAVEN Java/Spring H2 REST imploying HAL
+This is a Gradle Java/Spring H2 REST imploying HAL
 
 - Searchable Interface
 - Supports over 6 million Changing Addresses daily
-- Can be deployed via MAVEN/EB to AWS with a node of XML in the POM.xml
+- Can be deployed via Gradle/EB to AWS with a node of XML in the POM.xml
 ## Features
 
 - Imports over 6 million addresses in less than 4 minutes
@@ -27,7 +27,7 @@ Just a few days effort because of Spring. Love Spring.
 
 BADHATS uses a number of open source projects to work properly:
 
-- [MAVEN] - Java container made simple!
+- [Gradle] - Java container made simple!
 - [SPRING] - awesome DI and WEB FRAMEWORK FOR J8 and above.
 - [H2] - Native JAVA SQL DB, writing to a local file in the jar, not mem, so if needed, persistance would be maitained.
 - [HAL] - Hypertext Application Language, standard.

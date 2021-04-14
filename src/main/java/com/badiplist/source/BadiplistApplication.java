@@ -1,5 +1,5 @@
 package com.badiplist.source;
-
+import org.apache.commons.io.FileUtils;
 import org.eclipse.jgit.lib.TextProgressMonitor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -133,11 +133,11 @@ class GetRepo {
 	public void cloneTheRepo()  throws IOException, IllegalStateException, GitAPIException{
 		//First delete local repo that was built on last startup
 		Path rootPath = Paths.get("repo");
-		boolean deleteresult = FileSystemUtils.deleteRecursively(rootPath);
+		FileUtils.deleteDirectory(new File("repo"));
 
 
 		//Now go attempt a clone of the repo
-		if(deleteresult){
+
 		try (
 
 		Git result = Git.cloneRepository()
@@ -157,9 +157,7 @@ class GetRepo {
 			System.out.println(exp);
 		}
 
-	}else{
-			System.out.println("Could not delete dir");
-		}
+
 	}
 	public void saveSource(ListSourceContent content) throws IOException {
 

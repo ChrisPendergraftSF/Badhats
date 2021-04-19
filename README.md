@@ -9,7 +9,8 @@ This is a Gradle Java/Spring H2 REST imploying HAL
 
 - Searchable Interface
 - Supports over 6 million Changing Addresses daily
-- Can be deployed via Gradle/EB to AWS with a node of XML in the POM.xml
+- Can be deployed via Gradle/EB to AWS with a node of json via Docker. 
+- Reccomended that you use docker-content via docker cli to manage deploy, but will work as standalone JAR or WAR
 ## Features
 
 - Imports over 6 million addresses in less than 4 minutes
